@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #F7F9F7;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topo { display: flex; gap: 10px; padding: 12px; background: white; border-bottom: 1px solid #E3E8E3; }
+.topo #campo-nome { flex: 1; padding: 8px; }
+.topo #campo-quantidade { width: 70px; padding: 8px; }
+
+.botao-principal {
+  background: #2E7D32; color: white; border: none;
+  padding: 8px 18px; font-weight: bold; cursor: pointer;
+}
+.botao-principal:hover { background: #1B5E20; }
+
+.lista { flex: 1; overflow-y: auto; list-style: none; margin: 0; padding: 0; }
+.item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; border-bottom: 1px solid #EEE; background: white;
+}
+.item .nome { flex: 1; }
+.item .quantidade { color: #607D8B; font-size: 13px; }
+.comprado { text-decoration: line-through; color: #9E9E9E; }
+.vazio { padding: 20px; color: #999; text-align: center; }
+
+.botao-excluir { background: none; border: none; color: #C0392B; cursor: pointer; }
+
+.mensagem { margin: 0; padding: 0 12px; min-height: 20px; font-size: 13px; color: #2E7D32; }
+.mensagem.erro { color: #C0392B; }
+
+.rodape { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-top: 1px solid #E3E8E3; background: white; }
+.status { flex: 1; font-size: 12px; color: #757575; }
+

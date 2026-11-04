@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <input id="campo-nome" type="text" placeholder="Item (ex.: Arroz)">
+    <input id="campo-quantidade" type="number" min="1" value="1">
+    <button id="botao-adicionar" class="botao-principal">Adicionar</button>
+  </header>
+
+  <ul id="lista" class="lista"></ul>
+
+  <p id="mensagem" class="mensagem"></p>
+
+  <footer class="rodape">
+    <span id="status" class="status"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
